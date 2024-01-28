@@ -32,7 +32,7 @@ public function MessageSend(Request $request){
 
     $sid    = env('TWILIO_SID'); // Change Env File twilio sid  from your twilio account
     $token  = env('TWILIO_TOKEN');  // Change Env File twilio token  from your twilio account
-    $number  = env('TWILIO_NUMBER');  // Change Env File twilio number  from your twilio account
+    $number  = env('TWILIO_NUMBER');  // Change Env File twilio number from your twilio account
     $twilio = new Client($sid, $token);
     $mobile = "+91".$request->mobile; 
     $messages = $request->message; 
